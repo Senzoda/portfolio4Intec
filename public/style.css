@@ -1,0 +1,40 @@
+body,h1{
+    font-family: "Raleway", Arial, sans-serif
+}
+
+h1{
+    letter-spacing: 6px
+}
+
+#blockPresentation{
+    padding:100px 16px;
+}
+
+#blockName{
+    position: relative;
+    top: 100px;
+}
+#blockNav {
+    margin: 300px 0px 0px 0px;
+}
+#profil{
+    border-radius: 125px;
+    position: relative;
+    top: 230px;
+    width: 180px;
+    opacity: 0.85;
+}
+#quoteBox, #contact {
+    padding:0px 0px 60px 0px;
+    margin-top: 150px;
+}
+#wrapper, #toolbox1, #toolbox2{
+    margin-bottom: 70px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+ }

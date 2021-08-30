@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+</style>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+
+<!-- Nav -->
+    <header id="blackNav2" class="w3-panel w3-center w3-opacity">
+        <div class="w3-padding-8">
+            <div class="w3-bar w3-border">
+            <a href="/" class="w3-bar-item w3-button">Home</a>
+            <a href="/portfolio" class="w3-bar-item w3-button w3-light-grey">Portfolio</a>
+            <a href="/contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <header id="quoteBox" class="w3-panel w3-center w3-opacity" >
+        <img src="https://img.icons8.com/ios/70/000000/maintenance.png"/>
+        <h1>My Toolbox</h1>
+        <h1 class="w3-xlarge">has some useful gadgets to help me meet your needs.</h1>
+    </header>
+
+<!-- Content -->
+    
+
+<div id="wrapper" class="w3-center w3-opacity" >
+
+    <div id="toolbox1" >
+        <% for(var i=0; i<ligne1.length; i++) { %>
+            <a href="details/<%= ligne1[i].id %>"><img src="<%= ligne1[i].image %>"></a> 
+         <% } %>
+    </div>
+   
+    <div id="toolbox2" >
+        <% for(var i=0; i<ligne2.length; i++) { %>
+            <a href="details/<%= ligne2[i].id %>"><img src="<%= ligne2[i].image %>"></a>
+         <% } %>
+    </div>
+
+    <div id="toolbox3" >
+        <a target="_blank" href="https://github.com/Senzoda"><img src="https://img.icons8.com/ios-filled/64/000000/github.png"/></a>
+    </div>
+
+</div>
+
+
+  
+<!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-large"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Senzoda 2021® </p>
+</footer>
+
+</body>
+</html>
