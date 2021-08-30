@@ -1,7 +1,7 @@
 //fichier nécessaire au lancement du serveur
 
-const app = require('./index'); //recupération du fichier index.js dans la partie server
-const http = require('http'); // permet de créer le serveur
+const app = require('./index');
+const http = require('http');
 const { on } = require('events');
 const debug = require('debug')('node-angular');
 

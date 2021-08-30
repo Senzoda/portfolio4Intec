@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const router = express.Router(); //récupérer le router d'express
+const router = express.Router();
 const home = require('../src/controller/home.controller');
 
 router.get('/', home.homepage)
@@ -9,9 +9,9 @@ router.get('/contact', home.contact)
 router.get('/details/:id', home.details)
 
 router.post('/add', home.post)
-// app.use('/', (req, res)=>{
-//     res.render("pages/index")
-// }); //url de base ajoutée à localhost:3000
+
+
+
 
 
 

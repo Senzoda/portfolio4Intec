@@ -11,9 +11,7 @@ require('dotenv').config(); // je v rechercher le fichier '.env' pour pouvoir r�
 class DbConfig {
     static connect = mysql.createPool({
         host: process.env.DBHOST, //host représente ma machine (localHost)
-        database: process.env.DBNAME, // databse = nom du user qui accède a ma db
-        user:process.env.DBUSER,// user = utilisateur qui a accès a ma db
-        password:process.env.DBPASSWORD// password = mot de passe du user
+        database: process.env.DBNAME,
     })
 }
 
